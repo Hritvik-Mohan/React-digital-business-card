@@ -62,6 +62,17 @@ body{
   border-radius: 10px;
 }
 
+@media (max-width: 32.25rem) {
+  .card {
+    width: 90%;
+  }
+
+  .card-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .card h3, h5 {
   color: #F5F5F5;
 }
