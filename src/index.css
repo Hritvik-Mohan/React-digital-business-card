@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  /* background: #1C1C1C; */
+  /* color: #FFFFFF; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,15 +19,156 @@
   -webkit-text-size-adjust: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100vh; */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+}
+
+body{
+  background: #1C1C1C;
+}
+
+.card-container {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  padding: 2rem;
+  background: #23252C;
+  /* height: 100vh; */
+
+}
+
+@media (max-width: 32.25rem) {
+  .card-container {
+    max-width: 100%;
+  }
+}
+
+.card {
+  width: 76%;
+  margin: 0 auto;
+  background: #1A1B21;
+  border-radius: 10px;
+}
+
+.card h3, h5 {
+  color: #F5F5F5;
+}
+
+.fedev {
+  font-size: 12.5px;
+  color: #F3BF99;
+}
+
+.btn-a > a, .btn-a-linked > a {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  justify-content:center;
+}
+
+.btn-a > a {
+  color: black;
+}
+
+.btn-a-linked > a {
+  color: white;
+}
+
+.btn-a, .btn-a-linked {
+  margin-top: 1rem;
+  width: 6.75rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+@media (max-width: 32.25rem) {
+  .btn-a, .btn-a-linked {
+    width: 100%;
+  }
+}
+
+.btn-a {
+  background: white;
+}
+
+.btn-a-linked {
+  background: #5093E2;
+}
+
+.details a {
+  font-size: 10.24px;
+  color: #F5F5F5;
+}
+
+/* h3 p a */
+
+.details h3 {
+  font-size: 1.6rem;
+  padding: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.card p {
+  color: #DCDCDC;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-around;
+  padding: 1rem;
+  background: #161619;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer > li {
+  list-style: none;
+  background: #918E9B;
+  padding: 0.1rem 0.3rem 0.05rem;
+  border-radius: 4px;
+}
+
+.footer > li > a {
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.details {
+  text-align: center;
+}
+
+.content-container {
+  padding: 2rem;
+  padding-top: 0rem;
+}
+
+.content-container p {
+  font-size: 10.24px;
+  line-height: 1.5;
+}
+
+.content-container h5 {
+  margin-top: 1rem;
 }
